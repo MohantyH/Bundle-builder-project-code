@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Bundle Builder - Fashion Collection</title>
+</head>
+
+<body>
+  <div class="bundle-builder">
+    <div class="builder-header">
+      <h1>Create Your Fashion Bundle</h1>
+      <p>Select 3 or more items to get 30% off your entire bundle!</p>
+    </div>
+
+    <div class="builder-content">
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- Sample Product -->
+        <div class="product-card" data-id="1" data-name="White Oversized Blazer" data-price="89.99">
+          <div class="product-image">
+            <img src="images/white-oversized-blaze.jpg" alt="White Oversized Blazer" />
+          </div>
+          <div class="product-info">
+            <h3>White Oversized Blazer</h3>
+            <p class="price">$89.99</p>
+            <button class="add-to-bundle-btn">Add to Bundle</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-id="2" data-name="Camel Wool Coat" data-price="129.99">
+          <div class="product-image">
+            <img src="images/camel-wool-coat.jpg" alt="Camel Wool Coat" />
+          </div>
+          <div class="product-info">
+            <h3>Camel Wool Coat</h3>
+            <p class="price">$129.99</p>
+            <button class="add-to-bundle-btn">Add to Bundle</button>
+          </div>
+        </div>
+        <div class="product-card" data-id="3" data-name="Casual Beige Set" data-price="69.99">
+  <div class="product-image">
+    <img src="images/casual-beige-set.jpg" alt="Casual Beige Set" />
+  </div>
+  <div class="product-info">
+    <h3>Casual Beige Set</h3>
+    <p class="price">$69.99</p>
+    <button class="add-to-bundle-btn">Add to Bundle</button>
+  </div>
+</div>
+<div class="product-card" data-id="4" data-name="Yellow Athleisure Set" data-price="89.99">
+  <div class="product-image">
+    <img src="images/yellow-athleisure-set.jpg" alt="Yellow Athleisure Set" />
+  </div>
+  <div class="product-info">
+    <h3>Yellow Athleisure Set</h3>
+    <p class="price">$89.99</p>
+    <button class="add-to-bundle-btn">Add to Bundle</button>
+  </div>
+</div>
+<div class="product-card" data-id="5" data-name="Urban Streetwear Set" data-price="55.99">
+  <div class="product-image">
+    <img src="images/urban-streetwear.jpg" alt="Urban Streetwear Set" />
+  </div>
+  <div class="product-info">
+    <h3>Urban Streetwear Set</h3>
+    <p class="price">$55.99</p>
+    <button class="add-to-bundle-btn">Add to Bundle</button>
+  </div>
+</div>
+<div class="product-card" data-id="6" data-name="Colorful Statement Piece Set" data-price="56.99">
+  <div class="product-image">
+    <img src="images/colorful-statement-piece.jpg" alt="Colorful Statement Piece Set" />
+  </div>
+  <div class="product-info">
+    <h3>Colorful Statement Piece Set</h3>
+    <p class="price">$56.99</p>
+    <button class="add-to-bundle-btn">Add to Bundle</button>
+  </div>
+</div>
+
+        <!-- Add more products similarly with valid image paths -->
+      </div>
+
+      <!-- Sidebar -->
+      <div class="bundle-sidebar">
+        <div class="sidebar-header">
+          <h2>Your Bundle</h2>
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <span class="progress-text">0/3 items selected</span>
+          </div>
+        </div>
+
+        <div class="selected-products">
+          <div class="empty-state">
+            <p>Select 3 items to unlock 30% discount</p>
+          </div>
+        </div>
+
+        <div class="bundle-summary">
+          <div class="discount-info" style="display: none;">
+            <div class="discount-badge">30% OFF</div>
+            <p>Bundle discount applied!</p>
+          </div>
+
+          <div class="price-breakdown">
+            <div class="subtotal-row">
+              <span>Subtotal:</span>
+              <span class="subtotal">$0.00</span>
+            </div>
+            <div class="discount-row" style="display: none;">
+              <span>Discount (30%):</span>
+              <span class="discount-amount">-$0.00</span>
+            </div>
+            <div class="total-row">
+              <span>Total:</span>
+              <span class="total">$0.00</span>
+            </div>
+          </div>
+
+          <button class="add-bundle-btn" disabled>Add Bundle to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
